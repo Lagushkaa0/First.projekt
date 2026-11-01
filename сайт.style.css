@@ -1,12 +1,8 @@
-
-/* ЗАДАНИЕ 2: Базовая настройка размеров (rem) */
 html {
-    /* Базовый размер шрифта 16px. 1rem = 16px */
     font-size: 16px; 
     scroll-behavior: smooth;
 }
 
-/* Базовый сброс */
 * {
     margin: 0;
     padding: 0;
@@ -14,22 +10,18 @@ html {
 }
 
 body {
-    /* ЗАДАНИЕ 1: Использование подключенных шрифтов. 
-       Montserrat для заголовков зададим ниже, Inter - для основного текста */
     font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
     color: #333;
     line-height: 1.6;
 }
 
-/* Применяем Montserrat к заголовкам для иерархии */
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
 .navbar {
     background-color: #333;
-    /* Перевод в rem: 15px / 16 = 0.9375rem */
     padding: 0.9375rem;
     text-align: center;
     position: sticky; 
@@ -56,7 +48,6 @@ h1, h2, h3 {
     border-bottom: 0.125rem solid #ffcc00; /* 2px */
 }
 
-/* Обертка для текста, чтобы он не прилипал к краям */
 .content-wrapper {
     max-width: 56.25rem; /* 900px */
     margin: 0 auto;
@@ -71,13 +62,10 @@ p {
     margin-bottom: 1.25rem; /* 20px */
 }
 
-/* =========================================
-   ЗАДАНИЕ 2: Hero-баннер 
-   ========================================= */
 .hero-banner {
     background-image: 
-        linear-gradient(135deg, rgba(106, 17, 203, 0.8) 0%, rgba(37, 117, 252, 0.8) 100%),
-        url('https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2000&auto=format&fit=crop');
+        linear-gradient(135deg, rgba(218, 71, 64, 0.8) 0%, rgba(37, 117, 252, 0.8) 100%),
+        url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7-mWv22HwlrdWGj_Y6lWr2LLahL029Usk2l9ktryr_wyAW8k8VAzBsfA&s=10);
     background-size: cover;
     background-position: center;
     color: white;
@@ -134,7 +122,6 @@ p {
     color: #666;
 }
 
-/* Кнопки (из старых заданий) */
 .btn {
     display: inline-block;
     padding: 0.625rem 1.25rem; /* 10px 20px */
@@ -155,9 +142,6 @@ p {
     background-color: #1a5bbd;
 }
 
-/* =========================================
-   ЗАДАНИЕ 1: Карточки (Тени и Hover)
-   ========================================= */
 .features {
     margin-top: 3.75rem; /* 60px */
 }
@@ -192,16 +176,12 @@ p {
     font-size: 0.95rem; /* 15.2px */
 }
 
-/* Hover-анимация */
 .card:hover {
     transform: translateY(-0.625rem); /* -10px */
     box-shadow: 0 1.25rem 1.5625rem -0.3125rem rgba(0,0,0,0.15), 0 0.625rem 0.625rem -0.3125rem rgba(0,0,0,0.04); 
     border-top-color: #ffcc00; 
 }
 
-/* =========================================
-   ЗАДАНИЕ 3: Эффект Glassmorphism
-   ========================================= */
 .glass-section {
     position: relative;
     height: 25rem; /* 400px */
@@ -250,10 +230,6 @@ p {
     font-weight: 500;
 }
 
-/* =========================================
-   НОВОЕ ПРАКТИЧЕСКОЕ ЗАДАНИЕ
-   ========================================= */
-
 .practicum-section {
     background-color: #ffffff;
     padding: 2.5rem; /* 40px */
@@ -274,7 +250,6 @@ p {
     margin-bottom: 1.5rem; /* 24px */
 }
 
-/* ЗАДАНИЕ 3: Псевдоэлемент ::first-letter (Буквица) */
 .text-with-dropcap::first-letter {
     font-size: 3.5rem; /* 56px */
     font-weight: 800;
@@ -285,7 +260,6 @@ p {
     margin-top: -0.2rem; /* -3.2px */
 }
 
-/* ЗАДАНИЕ 3: Оформление цитаты (blockquote) */
 .styled-quote {
     background-color: #f4f7f6;
     border-left: 0.3rem solid #2575fc; /* Синяя полоса слева */
