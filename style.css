@@ -1,13 +1,15 @@
-       p{
-            font-size: 30px;
+  body{
+    background-color: #f8fafc;
+  }
+  p{
+            font-size: 18px;
+            line-height: 1.6;
         }
         th{
             color: blueviolet;
         }
-  .nikolaeva {
-    font-size: 30px;
-    color: aqua;
-  }     
-  .romanger{
-    background-color: ;
-  }
+    .profile-card{
+        background-color: white;
+        border: 1px solid;
+        border-radius: 12px;
+    }
